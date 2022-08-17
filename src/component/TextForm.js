@@ -1,43 +1,19 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-  // Dark Mode start here
-  // const [myStyle, setmyStyle] = useState({
-  //   color: "black",
-  //   backgroundColor: "white",
-  // });
-
-  // const [btnText, setbtnText] = useState("Enable Dark Mode");
-
-  // const toggleStyle = () => {
-  //   if (myStyle.color === "black") {
-  //     setmyStyle({
-  //       color: "white",
-  //       backgroundColor: "black",
-  //     });
-  //     setbtnText("Disable Dark Mode");
-  //   } else {
-  //     setmyStyle({
-  //       color: "black",
-  //       backgroundColor: "white",
-  //     });
-  //     setbtnText("Enable Dark Mode");
-  //   }
-  // };
-  // Dark Mode close here
 
   const handleUpClick = () => {
     console.log("Uppercase btn was clicked");
     let newText = text.toUpperCase();
     setText(newText);
-    props.showAlert("Converted to uppercase successfully", "success");
+//     props.showAlert("Converted to uppercase successfully", "success");
     // Example to taking function as a Props
   };
   const handleLoClick = () => {
     console.log("Lowercase btn was clicked");
     let newText = text.toLowerCase();
     setText(newText);
-    props.showAlert("Converted to lowercase successfully", "success");
+//     props.showAlert("Converted to lowercase successfully", "success");
   };
   const handleOnChange = (event) => {
     console.log("Changed");
@@ -46,7 +22,7 @@ export default function TextForm(props) {
   const handleClrClick = () => {
     let newText = "";
     setText(newText);
-    props.showAlert("Text Cleared", "success");
+//     props.showAlert("Text Cleared", "success");
   };
 
   // copy
@@ -60,7 +36,7 @@ export default function TextForm(props) {
   const handleRemoveSpace = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
-    props.showAlert("Removed Extra Spaces", "success");
+//     props.showAlert("Removed Extra Spaces", "success");
   };
 
   const [text, setText] = useState("");
