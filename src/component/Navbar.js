@@ -13,7 +13,7 @@ export default function Navbar(props) {
         <>
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
-        <Link className={`nav-link ${location.pathname==="/"?"active": ""}`} to="/">{props.title}</Link>
+        <Link className={`nav-link ${location.pathname==="/"?"active": ""}`} to="/" style={{color:props.mode==='dark'?'white':'black'}}>{props.title}</Link>
         
         <button className="navbar-toggler " type="button" >
         <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
