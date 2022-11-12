@@ -76,8 +76,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
             >
             <div className="accordion-body">
-              <a className="text-decoration-none" href="https://medlocator.vercel.app/">MedLocator</a> <br />
-              <a className="text-decoration-none" href="https://pareshwar11.github.io/pareshwar/">Portfolio</a>
+              <a className="text-decoration-none" href="https://pareshwar.vercel.app/">Portfolio</a>
             </div>
           </div>
         </div>
